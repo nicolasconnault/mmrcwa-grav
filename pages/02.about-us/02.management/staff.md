@@ -11,7 +11,7 @@ body_classes: text-center
 visible: true
 widget:
     options: ''
-collection:
+items:
     -
         full_name: 'Mr Iqbal Samnakay'
         title: Chairperson
