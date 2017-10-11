@@ -1,8 +1,8 @@
 ---
 title: 'About Us'
-description: 'The Metropolitan Migrant Resource Centre Inc. is a non-profit community organisation based in Mirrabooka which provides services across the metropolitan area.'
 id: about-us
 body_classes: text-center
+description: 'The Metropolitan Migrant Resource Centre Inc. is a non-profit community organisation based in Mirrabooka which provides services across the metropolitan area.'
 sections:
     -
         icon: fa-users
