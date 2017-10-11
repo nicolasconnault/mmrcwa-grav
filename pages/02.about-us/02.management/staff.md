@@ -23,13 +23,18 @@ content:
                 - 'Mr Samnakay is the Director of Strategic Policy at the Department of Water. He holds undergraduate and post-graduate qualifications in science, occupational health and safety and public health.'
                 - 'Mr Samnakay has an established track record of voluntary and community work through sports and social organisations including membership of the Muslim Social and Sports Association  for 16 years, holding the positions of Secretary and Chairman at various times.'
         -
-            full_name: 'Mr Iqbal Samnakay'
-            title: Chairperson
+            full_name: 'Henrietta Fernandes'
+            title: 'Vice Chair'
             photo: iqbal_samnakay.jpg
-            term_of_office: '2015 - 2018'
-            heading_notes: 'Mr Samnakay was also Chairperson from 2010 - 2012'
-            blurb:
-                - 'Mr Samnakay is the Director of Strategic Policy at the Department of Water. He holds undergraduate and post-graduate qualifications in science, occupational health and safety and public health.'
-                - 'Mr Samnakay has an established track record of voluntary and community work through sports and social organisations including membership of the Muslim Social and Sports Association  for 16 years, holding the positions of Secretary and Chairman at various times.'
+            term_of_office: '2014 - 2017'
+            heading_notes: null
+            blurb: null
+        -
+            full_name: 'Cassandre Hubert'
+            title: Secretary
+            photo: iqbal_samnakay.jpg
+            term_of_office: '2014 - 2017'
+            heading_notes: null
+            blurb: null
 ---
 
