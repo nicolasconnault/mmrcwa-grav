@@ -45,5 +45,20 @@ content:
             blurb:
                 - 'Lenda Oshalem has worked at senior levels of government and politics for over ten years in Western Australia and around the country through the Australian Labor Party. She has experience in strategy development, stakeholder management, training, communications, managing teams, developing and implementing long-term and short-term plans.'
                 - 'Lenda is Assyrian and her parents came to Australia from Iraq in the seventies. She is driven by her belief in the values of community, fairness and equality.'
+        -
+            full_name: 'Ahmad Fadlalla'
+            title: Member
+            photo: iqbal_samnakay.jpg
+            term_of_office: '2015 - 2018'
+            heading_notes: null
+            blurb: null
+        -
+            full_name: 'Mr. Albert Meyerkort'
+            title: Member
+            photo: albert_meyerkort.jpg
+            term_of_office: '2015 - 2018'
+            heading_notes: null
+            blurb:
+                - 'Albert currently works in environmental health in local government and has a number of years experience in that field. He has worked in the oil and gas industry as a regulatory advisor and several local governments in the past.'
 ---
 
