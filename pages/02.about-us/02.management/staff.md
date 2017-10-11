@@ -16,6 +16,7 @@ content:
         -
             full_name: 'Mr Iqbal Samnakay'
             title: Chairperson
+            photo: iqbal_samnakay.jpg
             term_of_office: '2015 - 2018'
             heading_notes: 'Mr Samnakay was also Chairperson from 2010 - 2012'
             blurb:
