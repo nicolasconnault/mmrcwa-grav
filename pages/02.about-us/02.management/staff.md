@@ -60,5 +60,15 @@ content:
             heading_notes: null
             blurb:
                 - 'Albert currently works in environmental health in local government and has a number of years experience in that field. He has worked in the oil and gas industry as a regulatory advisor and several local governments in the past.'
+        -
+            full_name: 'Mr Karem Elhosainy'
+            title: Member
+            photo: karem_elhosainy.jpg
+            term_of_office: '2016 - 2019'
+            heading_notes: null
+            blurb:
+                - 'Karem managed various projects as a Civil Engineer in Iraq.'
+                - 'It took him five years of processing but finally the happiest day of his life came when he was told his family had been accepted to come to Australia.  He settled in Perth in 2000 because he found it was a place that was growing and developing, something he could identify with.'
+                - 'He was employed in the aged and child care industry also as a Settlement Officer assisting newly arrived migrants for 10 years in Perth.  Established an import and export family business. Volunteered in coaching and short track starter to kids.'
 ---
 
