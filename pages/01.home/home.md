@@ -1,6 +1,7 @@
 ---
 title: Home
 body_classes: home
+visible: true
 id: ''
 class: ''
 background_color: ''
