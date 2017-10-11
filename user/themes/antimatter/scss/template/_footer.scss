@@ -1,0 +1,39 @@
+// Footer styling
+footer {
+	background: $footer-bg;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	@extend .padding-horiz;
+	color: $footer-text;
+    padding: 50px;
+
+	a:hover {
+		color: #fff;
+	}
+
+    ul {
+        list-style: none;
+        li {
+            line-height: 25px;
+            a {
+              color: #19a1c6;
+              font-size: 20px;
+              font-weight: 700;
+            }
+        }
+    }
+    #contact-info p {
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+    }
+    #contact-info i {
+        font-size: 38px;
+        color: #333;
+        vertical-align: middle;
+        width: 70px;
+        text-align: center;
+    } 
+}

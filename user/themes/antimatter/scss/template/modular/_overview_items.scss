@@ -1,0 +1,25 @@
+.overview-items {
+    max-width: 1200px;
+    margin: 0 auto;
+    .overview-item {
+        text-align: center;
+        padding: 20px;
+        h2 {
+          font-family: 'Nunito Sans', sans-serif;
+          text-align: center;
+          color: #009cbd;
+          font-weight: 900;
+          text-transform: uppercase;
+          font-size: 25px;
+        }
+        img {
+            max-width: 100%;
+        }
+
+    }
+    @media(min-width: 768px) {
+        .overview-item {
+            padding: 30px; 
+        }
+    }
+}

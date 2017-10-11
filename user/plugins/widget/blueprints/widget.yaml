@@ -1,0 +1,78 @@
+title: Widget
+rules:
+  slug:
+    pattern: "[a-z][a-z0-9_\-]+"
+    min: 2
+    max: 80
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          fields:
+            widget_extra:
+              type: section
+              underline: true
+              data-type@: [\Grav\Plugin\WidgetPlugin::featureEnabled,extras,section]
+              ordering@: 1000
+
+              fields:
+                header.id:
+                  type: text
+                  label: Id
+                  help: 'Element id Attribute'
+                header.class:
+                  type: text
+                  label: Class
+                  help: 'Element Class Attributes'
+                header.background_color:
+                  type: colorpicker
+                  label: Background Color
+                  help: 'Element Background Color'
+                header.background_image:
+                  type: text
+                  label: Background Image <br> See <a href="https://learn.getgrav.org/forms/blueprints/how-to-add-file-upload#destination">Grav doc</a>
+                  placeholder: 'path | page@:path | theme@:path'
+                  help: 'Element Background Image'
+                header.image_align:
+                  type: toggle
+                  label: Image Align
+                  highlight: ''
+                  default: ''
+                  options:
+                      '': None
+                      left: left
+                      right: right
+                  help: 'Image Alignment'
+                header.link:
+                  type: text
+                  label: Link
+                  placeholder: /home or http://www.example.com
+
+                header.link_text:
+                  type: text
+                  label: Link Text
+                  placeholder: Read More
+
+        widget:
+          type: tab
+          title: Widget
+          data-type@: [\Grav\Plugin\WidgetPlugin::featureEnabled,widget_tab,tab]
+          fields:
+
+            header.widget.areas:
+              label: Widget Areas
+              style: vertical
+              type: list
+              btnLabel: Add Location
+
+              import@:
+                type: widget_areas
+                context: blueprints://
+            header.widget.options:
+              type: array
+              label: Widget Options
+              help: Optional Widget Options
+              placeholder_key: Option name
+              placeholder_value: Option value
+              required: false

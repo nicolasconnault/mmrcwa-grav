@@ -1,0 +1,15 @@
+<div class="person"> 
+    <div class="photo">
+        <img src="{{ page.media[person.photo].url }}" />
+    </div>
+    <div class="heading">
+        <p>{{ person.title}}: {{ person.full_name }}</p>
+        <p>Term of office: {{ person.term_of_office }}</p>
+        <p>{{ person.heading_notes }}</p>
+    </div>
+    <div class="blurb">
+        {% for line in person.blurb %}
+            <p>{{ line }}</p>
+        {% endfor %}
+    </div>
+</div>

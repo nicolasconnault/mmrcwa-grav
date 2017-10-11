@@ -1,0 +1,30 @@
+{% embed 'partials/base.html.twig' %}
+
+	{% set collection = page.header.content.items %}
+	
+    {% block content %}
+        {% set hero_image = page.media['hero.jpg'] %}
+        
+        {% if hero_image %}
+            <div class="flush-top" id="hero-image" style="background-image: url({{ hero_image.url }});">
+        {% else %}
+            <div class="default-header">
+        {% endif %}
+        </div>
+        
+        {% if config.plugins.breadcrumbs.enabled %}
+            {% include 'partials/breadcrumbs.html.twig' %}
+        {% endif %}
+        
+        <div class="narrow-page">
+            <h1 id="page-title">{{ page.title }}</h1>
+            <div id="staff-list" class="block">
+                {% for person in collection %}
+                    {% include 'partials/person.html.twig' with {'person':person} %}
+                {% endfor %}
+            </div>
+            {{ page.content }}
+        </div>
+    {% endblock %}
+
+{% endembed %}

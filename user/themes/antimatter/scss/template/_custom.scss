@@ -1,0 +1,147 @@
+// Your custom SCSS should be written here...
+
+.grav-lightslider {
+    .lSSlideOuter {
+        .lSPager.lSpg {
+            > li a {
+                z-index: 1;
+            }
+        }
+    }
+}
+
+#body > script:first-child + .grav-lightslider {
+  margin-top: -3rem;
+}
+
+body.home {
+    section#body {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 66px;
+    }
+}
+#home-hero {
+  background-image: url(../images/carousel/beach_group.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#home-hero h1 {
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 50px;
+}
+@media(min-width: 768px) {
+    #home-hero h1 {
+        font-size: 100px;
+    }
+}
+
+#hero-image {
+    height: 32vw;
+    background-size: cover;
+    margin-left: -7rem;
+    margin-right: -7rem;
+    margin-top: -60px;
+    background-position: center;
+    max-height: 420px;
+    min-height: 200px;
+}
+
+.sb-slidebar.sb-active {
+    z-index: 2;
+}
+
+body.text-center #body {
+    text-align: center;
+}
+
+.narrow-page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1#page-title {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+p#page-description {
+    font-size: 24px;
+    color: $core-accent;
+    font-weight: 700;
+}
+
+.page-section {
+    margin-top: 80px;
+    h2 { 
+        font-weight: 700;
+        text-transform: uppercase;
+
+        i {
+            color: $core-text;
+            font-size: 75px;
+        }
+    }
+
+    p.section-text {
+        font-size: 22px;
+        font-weight: 700;
+    }
+}
+#breadcrumbs {
+    margin-left: -5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    span {
+        padding: 0 !important;
+    }
+}
+
+#staff-list {
+    .person {
+        padding-bottom: 30px;
+        padding-top: 50px;
+        min-height: 310px;
+        border-bottom: 1px solid $core-accent;
+
+        .photo {
+            float: left;
+            margin-right: 20px;
+
+            img {
+                max-height: 220px;
+            }
+        }
+
+        .heading {
+            p {
+                color: $core-accent;
+                font-weight: 700;
+                font-size: 18px;
+                margin: 0;
+                text-align: left;
+                line-height: 21px;
+            }
+        }
+
+        .blurb {
+            p {
+                text-align: left;
+                line-height: 21px;
+
+            }
+        }
+    }
+
+    .person:last-child {
+        border-bottom: none;
+    }
+    .person:first-child {
+        padding-top: 10px;
+    }
+}
