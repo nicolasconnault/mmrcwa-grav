@@ -1,10 +1,10 @@
-enabled: true
+enabled: false
 text_var: 'Custom Text added by the **Git Sync** plugin (disable plugin to remove)'
 folders:
   - pages
 repository: 'https://github.com/nicolasconnault/mmrcwa-grav.git'
 user: nicolasconnault
-password: gitsync-def5020016087cc5a038e7b8d118de693bd189f2d9d085172328ce0442c1403b1b85ccbb72f6372ec9c7d85698bf5503a6aeaaf2eac3305f269639c21599450df365d52fdf073691268a78374e080c7eeff1ae8218e471c21d539f1c8c2138d8eec12d85a48ac3cb95c9e5f69a77ca30893470512e8e4dff851a57c9
+password: gitsync-def5020068fd204ad512e273eed2516ab7fbba4269fa131eeb904e1f5e358a3cae90864c39f1b63d250f01f9f9fc0a8a68dfa7b00c6aa457a8fd70b4c732cdc779ed6aa47f8bd7a10c9625f114a8892bb9d759385edcc70e65ec3c601ae043c9473a24d56c091eb78576f858d010ea74eaa9a3d5fe4de78ea28d7404
 webhook: /_git-sync
 branch: master
 remote:
