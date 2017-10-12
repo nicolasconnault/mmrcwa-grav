@@ -11,6 +11,7 @@ cache/*
 !cache/.*
 logs/*
 !logs/.*
+tmp/*
 
 # OS Generated
 .DS_Store*
