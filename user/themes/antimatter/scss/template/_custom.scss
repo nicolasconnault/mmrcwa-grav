@@ -68,12 +68,19 @@ body.text-center #body {
 h1#page-title {
     text-transform: uppercase;
     font-weight: 900;
+    padding: 0 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 55px;
 }
 
 p#page-description {
     font-size: 24px;
     color: $core-accent;
     font-weight: 700;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
 }
 
 .page-section {
@@ -81,6 +88,11 @@ p#page-description {
     
     &:first-of-type {
         padding-top: 0;
+    }
+
+    &.narrow {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     padding-left: 9%;
@@ -97,6 +109,11 @@ p#page-description {
         i {
             color: $core-text;
             font-size: 75px;
+        }
+
+        img {
+            height: 100px;
+            max-width: 100px;
         }
     }
 
@@ -174,4 +191,21 @@ p#page-description {
     .person:first-child {
         padding-top: 10px;
     }
+}
+
+#contact-us-button {
+    text-align: center;
+    width: 100%;
+    margin: 40px 0px;
+    a {
+        img {
+            height: 40px;
+        }
+    }
+}
+
+#funded-by {
+    font-size: 22px;
+    color: $core-accent;
+    margin-bottom: 50px;
 }

@@ -839,12 +839,19 @@ body.text-center #body {
 
 h1#page-title {
   text-transform: uppercase;
-  font-weight: 900; }
+  font-weight: 900;
+  padding: 0 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 55px; }
 
 p#page-description {
   font-size: 24px;
   color: #19a1c6;
-  font-weight: 700; }
+  font-weight: 700;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 30px; }
 
 .page-section {
   padding-top: 80px;
@@ -852,6 +859,9 @@ p#page-description {
   padding-right: 9%; }
   .page-section:first-of-type {
     padding-top: 0; }
+  .page-section.narrow {
+    max-width: 1200px;
+    margin: 0 auto; }
   .page-section.bg-gray {
     background-color: #eee; }
   .page-section h2 {
@@ -860,6 +870,9 @@ p#page-description {
     .page-section h2 i {
       color: #444;
       font-size: 75px; }
+    .page-section h2 img {
+      height: 100px;
+      max-width: 100px; }
   .page-section p.section-text {
     font-size: 22px;
     font-weight: 700; }
@@ -908,6 +921,18 @@ p#page-description {
   border-bottom: none; }
 #staff-list .person:first-child {
   padding-top: 10px; }
+
+#contact-us-button {
+  text-align: center;
+  width: 100%;
+  margin: 40px 0px; }
+  #contact-us-button a img {
+    height: 40px; }
+
+#funded-by {
+  font-size: 22px;
+  color: #19a1c6;
+  margin-bottom: 50px; }
 
 .modular.header-image #header {
   background-color: rgba(255, 255, 255, 0);

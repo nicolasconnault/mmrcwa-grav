@@ -15,7 +15,7 @@
     {% endif %}
   
     <div>
-        <h1 id="page-title">{{ page.title }}</h1>
+        <h1 id="page-title">{% if page.header.display_title is not empty %}{{ page.header.display_title }}{% else %}{{ page.title }}{% endif %}</h1>
         {% if page.header.description is not empty %}<p id="page-description">{{ page.header.description }}</p>{% endif %}
 
         {% for section in page.header.sections %}
@@ -23,12 +23,19 @@
                 {% if section.icon is not empty or section.title is not empty%}
                     <h2>
                         {% if section.icon is not empty %}<i class="fa {{ section.icon }}"></i><br />{% endif %}
+                        {% if section.image is not empty %}<img src="{{ page.media[section.image].url }}" /><br />{% endif %}
                         {{ section.title }}
                     </h2>
                 {% endif %}
 
                 {% if section.text is not empty %}
-                    <p class="section-text">{{ section.text }}</p>
+                    {% if section.text is iterable %}
+                        {% for paragraph in section.text %} 
+                            <p class="section-text">{{ paragraph }}</p>
+                        {% endfor %}
+                    {% else %}
+                        <p class="section-text">{{ section.text }}</p>
+                    {% endif %}
                 {% endif %}
 
                 {% if section.sub_sections is not empty %}
@@ -52,6 +59,18 @@
                 {% endif %}
             </div>
         {% endfor %}
+
+        {% if page.header.contact_button is not empty %}
+            <div id="contact-us-button">
+                <a href="{{ pages.find('/contact-us').permalink }}">
+                    <img src="{{ url('theme://images/contact-us.png') }}" />
+                </a>
+            </div>
+        {% endif %}
+
+        {% if page.header.funded_by is not empty %}
+            <div id="funded-by">{{ page.header.funded_by }}</div>
+        {% endif %}
 
         {{ page.content }}
     </div>
