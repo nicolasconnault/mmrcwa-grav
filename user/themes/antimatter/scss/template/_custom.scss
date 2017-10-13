@@ -83,10 +83,17 @@ p#page-description {
     padding: 20px 30px;
 }
 
+body.section-separators .page-section {
+    border-bottom: 1px solid $core-accent; 
+    padding-bottom: 50px;
+}
+
 .page-section {
     padding-top: 80px;
+
     
     &:first-of-type {
+        border-bottom: none;
         padding-top: 0;
     }
 
@@ -139,6 +146,10 @@ p#page-description {
             padding: 30px;
         }
     }
+
+    ul {
+        text-align: left;
+    }
 }
 #breadcrumbs {
     margin-left: -5rem;
@@ -150,6 +161,9 @@ p#page-description {
 }
 
 #staff-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
     .person {
         padding-bottom: 30px;
         padding-top: 50px;

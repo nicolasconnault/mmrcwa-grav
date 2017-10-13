@@ -1,0 +1,11 @@
+{% if section.text is iterable %}
+    {% for paragraph in section.text %} 
+        <p class="section-text">
+            {% include 'partials/section_text_paragraph.html.twig' with {'section': section, 'paragraph': paragraph} %}
+        </p>
+    {% endfor %}
+{% else %}
+    <p class="section-text">
+        {% include 'partials/section_text_paragraph.html.twig' with {'section': section, 'paragraph': section.text} %}
+    </p>
+{% endif %}

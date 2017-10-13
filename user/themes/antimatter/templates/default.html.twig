@@ -29,13 +29,7 @@
                 {% endif %}
 
                 {% if section.text is not empty %}
-                    {% if section.text is iterable %}
-                        {% for paragraph in section.text %} 
-                            <p class="section-text">{{ paragraph }}</p>
-                        {% endfor %}
-                    {% else %}
-                        <p class="section-text">{{ section.text }}</p>
-                    {% endif %}
+                    {% include 'partials/section_text.html.twig' with {'section': section} %}
                 {% endif %}
 
                 {% if section.sub_sections is not empty %}
@@ -49,7 +43,9 @@
                                     {% if sub_section.image is not empty %}
                                         <img src="{{ page.media[sub_section.image].url }}" />
                                     {% endif %}
-                                    <p>{{ sub_section.text }}</p>
+
+                                    {% include 'partials/section_text.html.twig' with {'section': sub_section} %}
+
                                 {% if sub_section.url is not empty %}
                                     </a>
                                 {% endif %}
@@ -58,6 +54,7 @@
                     </div>
                 {% endif %}
             </div>
+
         {% endfor %}
 
         {% if page.header.contact_button is not empty %}

@@ -853,11 +853,16 @@ p#page-description {
   margin: 0 auto;
   padding: 20px 30px; }
 
+body.section-separators .page-section {
+  border-bottom: 1px solid #19a1c6;
+  padding-bottom: 50px; }
+
 .page-section {
   padding-top: 80px;
   padding-left: 9%;
   padding-right: 9%; }
   .page-section:first-of-type {
+    border-bottom: none;
     padding-top: 0; }
   .page-section.narrow {
     max-width: 1200px;
@@ -889,6 +894,8 @@ p#page-description {
         line-height: 25px; }
       .page-section .sub-sections-wrapper .sub-section p {
         font-weight: 700; }
+  .page-section ul {
+    text-align: left; }
 
 #breadcrumbs {
   margin-left: -5rem;
@@ -897,30 +904,34 @@ p#page-description {
   #breadcrumbs span {
     padding: 0 !important; }
 
-#staff-list .person {
-  padding-bottom: 30px;
-  padding-top: 50px;
-  min-height: 310px;
-  border-bottom: 1px solid #19a1c6; }
-  #staff-list .person .photo {
-    float: left;
-    margin-right: 20px; }
-    #staff-list .person .photo img {
-      max-height: 220px; }
-  #staff-list .person .heading p {
-    color: #19a1c6;
-    font-weight: 700;
-    font-size: 18px;
-    margin: 0;
-    text-align: left;
-    line-height: 21px; }
-  #staff-list .person .blurb p {
-    text-align: left;
-    line-height: 21px; }
-#staff-list .person:last-child {
-  border-bottom: none; }
-#staff-list .person:first-child {
-  padding-top: 10px; }
+#staff-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px; }
+  #staff-list .person {
+    padding-bottom: 30px;
+    padding-top: 50px;
+    min-height: 310px;
+    border-bottom: 1px solid #19a1c6; }
+    #staff-list .person .photo {
+      float: left;
+      margin-right: 20px; }
+      #staff-list .person .photo img {
+        max-height: 220px; }
+    #staff-list .person .heading p {
+      color: #19a1c6;
+      font-weight: 700;
+      font-size: 18px;
+      margin: 0;
+      text-align: left;
+      line-height: 21px; }
+    #staff-list .person .blurb p {
+      text-align: left;
+      line-height: 21px; }
+  #staff-list .person:last-child {
+    border-bottom: none; }
+  #staff-list .person:first-child {
+    padding-top: 10px; }
 
 #contact-us-button {
   text-align: center;

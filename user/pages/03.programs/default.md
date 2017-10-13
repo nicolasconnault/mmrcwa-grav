@@ -1,5 +1,6 @@
 ---
 title: Programs
+display_title: '&nbsp;'
 body_classes: text-center
 visible: true
 sections:
