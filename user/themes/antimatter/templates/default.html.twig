@@ -20,7 +20,7 @@
 
         {% for section in page.header.sections %}
             <div class="{{ section.style_classes }} page-section">
-                {% if section.icon is not empty or section.title is not empty%}
+                {% if section.icon is not empty or section.title is not empty or section.image is not empty %}
                     <h2>
                         {% if section.icon is not empty %}<i class="fa {{ section.icon }}"></i><br />{% endif %}
                         {% if section.image is not empty %}<img src="{{ page.media[section.image].url }}" /><br />{% endif %}

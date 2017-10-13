@@ -223,3 +223,13 @@ body.section-separators .page-section {
     color: $core-accent;
     margin-bottom: 50px;
 }
+
+form#contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+
+    div.form-label {
+        display: none;
+    }
+}

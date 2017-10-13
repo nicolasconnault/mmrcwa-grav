@@ -945,6 +945,13 @@ body.section-separators .page-section {
   color: #19a1c6;
   margin-bottom: 50px; }
 
+form#contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px; }
+  form#contact div.form-label {
+    display: none; }
+
 .modular.header-image #header {
   background-color: rgba(255, 255, 255, 0);
   box-shadow: none; }
