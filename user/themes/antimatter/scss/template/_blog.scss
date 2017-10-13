@@ -135,9 +135,8 @@
 
 // Breadcrumbs
 div#breadcrumbs {
-    padding-left: 0;
+    padding-left: 90px;
     text-align: left;
-    margin-left: -5rem;
     @include breakpoint(mobile-only) {
         display: none;
     }

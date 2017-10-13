@@ -14,14 +14,42 @@
         {% include 'partials/breadcrumbs.html.twig' %}
     {% endif %}
   
-    <div class="narrow-page">
+    <div>
         <h1 id="page-title">{{ page.title }}</h1>
-        <p id="page-description">{{ page.header.description }}</p>
+        {% if page.header.description is not empty %}<p id="page-description">{{ page.header.description }}</p>{% endif %}
 
         {% for section in page.header.sections %}
-            <div class="page-section">
-                <h2><i class="fa {{ section.icon }}"></i><br />{{ section.title }}</h2>
-                <p class="section-text">{{ section.text }}</p>
+            <div class="{{ section.style_classes }} page-section">
+                {% if section.icon is not empty or section.title is not empty%}
+                    <h2>
+                        {% if section.icon is not empty %}<i class="fa {{ section.icon }}"></i><br />{% endif %}
+                        {{ section.title }}
+                    </h2>
+                {% endif %}
+
+                {% if section.text is not empty %}
+                    <p class="section-text">{{ section.text }}</p>
+                {% endif %}
+
+                {% if section.sub_sections is not empty %}
+                    <div class="sub-sections-wrapper {% if section.columns > 1 %}pure-g{% endif %}">
+                        {% for sub_section in section.sub_sections %}
+                            <div class="sub-section pure-u-1 pure-u-md-1-{{ section.columns }}">
+                                {% if sub_section.url is not empty %}
+                                    <a href="{{ page.find(sub_section.url).permalink }}">                                    
+                                {% endif %}
+                                    <h3>{{ sub_section.title }}</h3>
+                                    {% if sub_section.image is not empty %}
+                                        <img src="{{ page.media[sub_section.image].url }}" />
+                                    {% endif %}
+                                    <p>{{ sub_section.text }}</p>
+                                {% if sub_section.url is not empty %}
+                                    </a>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
             </div>
         {% endfor %}
 

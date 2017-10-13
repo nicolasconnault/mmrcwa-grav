@@ -714,9 +714,8 @@ td {
   margin-bottom: 1rem; }
 
 div#breadcrumbs {
-  padding-left: 0;
-  text-align: left;
-  margin-left: -5rem; }
+  padding-left: 90px;
+  text-align: left; }
   @media only all and (max-width: 47.938em) {
     div#breadcrumbs {
       display: none; } }
@@ -833,9 +832,10 @@ body.home section#body {
 body.text-center #body {
   text-align: center; }
 
-.narrow-page {
-  max-width: 1200px;
-  margin: 0 auto; }
+#body {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0 !important; }
 
 h1#page-title {
   text-transform: uppercase;
@@ -847,7 +847,13 @@ p#page-description {
   font-weight: 700; }
 
 .page-section {
-  margin-top: 80px; }
+  padding-top: 80px;
+  padding-left: 9%;
+  padding-right: 9%; }
+  .page-section:first-of-type {
+    padding-top: 0; }
+  .page-section.bg-gray {
+    background-color: #eee; }
   .page-section h2 {
     font-weight: 700;
     text-transform: uppercase; }
@@ -857,6 +863,19 @@ p#page-description {
   .page-section p.section-text {
     font-size: 22px;
     font-weight: 700; }
+  .page-section .sub-sections-wrapper {
+    padding: 30px; }
+    .page-section .sub-sections-wrapper .sub-section {
+      padding-left: 9%;
+      padding-right: 9%;
+      padding: 30px; }
+      .page-section .sub-sections-wrapper .sub-section h3 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25px; }
+      .page-section .sub-sections-wrapper .sub-section p {
+        font-weight: 700; }
 
 #breadcrumbs {
   margin-left: -5rem;
