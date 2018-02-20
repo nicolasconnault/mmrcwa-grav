@@ -34,6 +34,7 @@ define('LOGIN_REDIRECT_COOKIE', 'grav-login-redirect');
 class Admin
 {
     const MEDIA_PAGINATION_INTERVAL = 20;
+    const TMP_COOKIE_NAME = 'tmp-admin-message';
 
     /**
      * @var Grav
@@ -176,6 +177,9 @@ class Admin
             $languages[$lang] = LanguageCodes::getNativeName($lang);
 
         }
+
+        // sort languages
+        asort($languages);
 
         return $languages;
     }

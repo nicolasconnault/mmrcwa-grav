@@ -27,6 +27,7 @@
         {% endif %}
     {% endblock %}
     {{ assets.css() }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.2/fullcalendar.min.css">
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
     <![endif]-->
@@ -41,7 +42,8 @@
         {% do assets.addJs('theme://js/slidebars.min.js') %}
     {% endblock %}
     {{ assets.js() }}
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.2/fullcalendar.min.js"></script>
 {% endblock head %}
 </head>
 <body id="top" class="{{ page.header.body_classes }}">
@@ -73,7 +75,7 @@
         {% block body %}
         <section id="body" class="{{ class }}">
             {% block content %}{% endblock %}
-            {{ widget() }} 
+            {{ widget() }}
         </section>
         {% endblock %}
 

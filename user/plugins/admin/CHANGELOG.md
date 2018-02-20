@@ -1,3 +1,88 @@
+# v1.7.0-rc.3
+## 02/15/2018
+
+1. [](#improved)
+    * Tab optimization with fixes for 'onpage' tabs
+    * Stopped Chrome from auto-completing admin user profile form [grav#1847](https://github.com/getgrav/grav/issues/1847)
+    * Added a fixed `ga-theme-17x` body class to help styling compatibility
+    * Outputs an iterable field as a string if `yaml: true` or `validate: type: yaml` set in blueprint
+1. [](#bugfix)
+    * Rolled back JS to known working versions [#1323](https://github.com/getgrav/grav-plugin-admin/issues/1323)
+    * Fixed missing translation in order field [#1324](https://github.com/getgrav/grav-plugin-admin/issues/1324)
+    * Fixed UI issue with last drop-down in button group [1325](https://github.com/getgrav/grav-plugin-admin/issues/1325)
+    * Fixed fieldset field outdated rendering [#1313](https://github.com/getgrav/grav-plugin-admin/issues/1313)
+
+# v1.7.0-rc.2
+## 01/24/2018
+
+1. [](#new)
+    * Moved to LineAwesome icons rather than FontAwesome (still compatible w/FA 4.7.0)
+1. [](#improved)
+    * Simplified open/close nav button
+    * Tidied Tools panel and added translations
+    * Tooltip and new icon for site preview
+    * Updated JS library dependencies
+    * Changed CodeMirror editor to use sans-serif font for readability 
+1. [](#bugfix)
+    * Fixed z-index issue in fullscreen mode [#1317](https://github.com/getgrav/grav-plugin-admin/issues/1317)
+
+# v1.7.0-rc.1
+## 01/22/2018
+
+1. [](#new)
+    * Added support for markdown in all form fields for `label`, `help`, and `description` when `markdown: true` is set on field
+    * Changed "made by" to Trilby Media from RocketTheme
+1. [](#improved)
+    * Lightened tabs in new theme
+    * Sort languages by key [#1303](https://github.com/getgrav/grav-plugin-admin/issues/1303)
+    * Add limit to Parent Levels [#1298](https://github.com/getgrav/grav-plugin-admin/pull/1298)
+1. [](#bugfix)
+    * Fixed alignment issue with language drop-down
+    * Fixed a z-index issue with fullscreen editor [#1302](https://github.com/getgrav/grav-plugin-admin/issues/1302)
+    * Fixed missing background on register [#1307](https://github.com/getgrav/grav-plugin-admin/issues/1307)
+    * Fixed some style issues with field descriptions
+    * Fixed an issue with `File` field losing download size setting
+    * Fixed distorted thumbnails in `File` field by using `object-fit: cover`
+
+# v1.7.0-beta.1
+## 12/29/2017
+
+1. [](#new)
+    * New lighter-and-tighter admin theme developed
+1. [](#improved)
+    * Added simple value support for list field type
+    * Added checks to automatically hide collapse buttons when there's only single value in list type
+
+# v1.6.7
+## 12/05/2017
+
+1. [](#new)
+    * Logout of admin goes straight to login form with a message (that then fades out)
+    * Added `sl`, `id`, `he`, `eu`, `et` languages
+1. [](#improved)
+    * Added code to use new `GPM::loadRemoteGrav` if it exists in Gav [grav#1746](https://github.com/getgrav/grav/pull/1746)
+    * Add vertical style for order field [#1253](https://github.com/getgrav/grav-plugin-admin/pull/1253)
+    * Added classes to pagemedia field [#1274](https://github.com/getgrav/grav-plugin-admin/issues/1274)
+    * Fixed selectize field not properly updating value when `option` is provided [#1236](https://github.com/getgrav/grav-plugin-admin/pull/1236)
+    * Tab layout tweaks
+    * Updated all language files with latest from [Crowdin](https://crowdin.com/project/grav-admin)
+1. [](#bugfix)
+    * Manual image metadata can now display in pagemedia when auto-generation is disabled [#1275](https://github.com/getgrav/grav-plugin-admin/issues/1275)
+    * Removed broken `home.hide_in_urls` code in `AdminBaseController::save()` that was throwing move errors
+    * Security fix to ensure file uploads are not manipulated mid-post - thnx @FLH!
+
+# v1.6.6
+## 10/27/2017
+
+1. [](#new)
+    * Fixed issue where sortable media in expert mode would reset frontmatter [#1252](https://github.com/getgrav/grav-plugin-admin/issues/1252)
+
+# v1.6.5
+## 10/26/2017
+
+1. [](#new)
+    * Added ability to **order** page media (requires latest Grav update)
+
 # v1.6.4
 ## 10/11/2017
 

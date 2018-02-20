@@ -84,14 +84,14 @@ p#page-description {
 }
 
 body.section-separators .page-section {
-    border-bottom: 1px solid $core-accent; 
+    border-bottom: 1px solid $core-accent;
     padding-bottom: 50px;
 }
 
 .page-section {
     padding-top: 80px;
 
-    
+
     &:first-of-type {
         border-bottom: none;
         padding-top: 0;
@@ -104,12 +104,12 @@ body.section-separators .page-section {
 
     padding-left: 9%;
     padding-right: 9%;
-    
+
     &.bg-gray {
         background-color: #eee;
     }
 
-    h2 { 
+    h2 {
         font-weight: 700;
         text-transform: uppercase;
 
@@ -141,7 +141,7 @@ body.section-separators .page-section {
                 line-height: 25px;
             }
             p {
-                font-weight: 700; 
+                font-weight: 700;
             }
             padding: 30px;
         }
@@ -232,4 +232,9 @@ form#contact {
     div.form-label {
         display: none;
     }
+}
+
+#calendar {
+    max-width: 1200px;
+    margin: 0 auto;
 }

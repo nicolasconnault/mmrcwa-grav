@@ -550,7 +550,7 @@ td {
       width: 100%; } }
 
 .three-column-bullet {
-  width: 33.33333%; }
+  width: 33.3333333333%; }
   @media only all and (max-width: 47.938em) {
     .three-column-bullet {
       width: 100%; } }
@@ -951,6 +951,10 @@ form#contact {
   padding: 20px; }
   form#contact div.form-label {
     display: none; }
+
+#calendar {
+  max-width: 1200px;
+  margin: 0 auto; }
 
 .modular.header-image #header {
   background-color: rgba(255, 255, 255, 0);

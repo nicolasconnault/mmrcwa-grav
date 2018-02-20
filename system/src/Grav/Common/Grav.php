@@ -2,7 +2,7 @@
 /**
  * @package    Grav.Common
  *
- * @copyright  Copyright (C) 2014 - 2017 RocketTheme, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2018 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -15,6 +15,7 @@ use Grav\Common\Page\Medium\Medium;
 use Grav\Common\Page\Page;
 use RocketTheme\Toolbox\DI\Container;
 use RocketTheme\Toolbox\Event\Event;
+use RocketTheme\Toolbox\Event\EventDispatcher;
 
 class Grav extends Container
 {
@@ -148,7 +149,7 @@ class Grav extends Container
         // Initialize Locale if set and configured.
         if ($this['language']->enabled() && $this['config']->get('system.languages.override_locale')) {
             $language = $this['language']->getLanguage();
-            setlocale(LC_ALL, count($language < 3) ? ($language . '_' . strtoupper($language)) : $language);
+            setlocale(LC_ALL, strlen($language) < 3 ? ($language . '_' . strtoupper($language)) : $language);
         } elseif ($this['config']->get('system.default_locale')) {
             setlocale(LC_ALL, $this['config']->get('system.default_locale'));
         }
@@ -254,11 +255,6 @@ class Grav extends Container
         // Calculate a Hash based on the raw file
         if ($page->eTag()) {
             header('ETag: "' . md5($page->raw() . $page->modified()).'"');
-        }
-
-        // Set debugger data in headers
-        if (!($format === null || $format == 'html')) {
-            $this['debugger']->enabled(false);
         }
 
         // Set HTTP response code
@@ -440,7 +436,7 @@ class Grav extends Container
      */
     public function fallbackUrl($path)
     {
-      	$this->fireEvent('onPageFallBackUrl');
+        $this->fireEvent('onPageFallBackUrl');
 
         /** @var Uri $uri */
         $uri = $this['uri'];
@@ -499,6 +495,9 @@ class Grav extends Container
                 }
                 Utils::download($page->path() . DIRECTORY_SEPARATOR . $uri->basename(), $download);
             }
+
+            // Nothing found
+            return false;
         }
 
         return $page;
