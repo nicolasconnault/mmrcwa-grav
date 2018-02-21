@@ -34,7 +34,8 @@
         "league/climate": "^3.2",
         "antoligy/dom-string-iterators": "^1.0",
         "miljar/php-exif": "^0.6.3",
-        "composer/ca-bundle": "^1.0"
+        "composer/ca-bundle": "^1.0",
+        "aaronhipple/grav-plugin-mailchimp": "^0.0.5"
     },
     "require-dev": {
         "codeception/codeception": "^2.1",

@@ -17,3 +17,6 @@ content:
     pagination: false
 ---
 
+Below is a calendar showing all our scheduled events. Click on an event to view more information.
+
+If you'd like to be kept up to date with these events, you may want to [subscribe to our newsletter](/newsletter).

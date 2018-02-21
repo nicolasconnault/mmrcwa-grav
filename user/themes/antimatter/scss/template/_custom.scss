@@ -19,6 +19,7 @@ body.home {
         padding-left: 0;
         padding-right: 0;
         padding-top: 66px;
+        padding-bottom: 50px;
     }
 }
 #home-hero {
@@ -224,7 +225,7 @@ body.section-separators .page-section {
     margin-bottom: 50px;
 }
 
-form#contact {
+form#contact, form#subscribe {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
@@ -235,6 +236,11 @@ form#contact {
 }
 
 #calendar {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#content {
     max-width: 1200px;
     margin: 0 auto;
 }
