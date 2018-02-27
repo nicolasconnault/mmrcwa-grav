@@ -40,10 +40,12 @@
         {% do assets.addJs('theme://js/modernizr.custom.71422.js', 100) %}
         {% do assets.addJs('theme://js/antimatter.js') %}
         {% do assets.addJs('theme://js/slidebars.min.js') %}
+        {% do assets.addJs('theme://js/shiner.min.js') %}
     {% endblock %}
     {{ assets.js() }}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.2/fullcalendar.min.js"></script>
+
 {% endblock head %}
 </head>
 <body id="top" class="{{ page.header.body_classes }}">

@@ -35,7 +35,8 @@
         "antoligy/dom-string-iterators": "^1.0",
         "miljar/php-exif": "^0.6.3",
         "composer/ca-bundle": "^1.0",
-        "aaronhipple/grav-plugin-mailchimp": "^0.0.5"
+        "aaronhipple/grav-plugin-mailchimp": "^0.0.5",
+        "aptoma/twig-markdown": "^2.0"
     },
     "require-dev": {
         "codeception/codeception": "^2.1",

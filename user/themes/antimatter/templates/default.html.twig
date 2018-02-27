@@ -2,6 +2,8 @@
 
 {% block content %}
     {% set hero_image = page.media['hero.jpg'] %}
+    {% set attachment_pdf = page.media['attachment.pdf'] %}
+    {% set attachment_docx = page.media['attachment.docx'] %}
 
     {% if hero_image %}
         <div class="flush-top" id="hero-image" style="background-image: url({{ hero_image.url }});">
@@ -16,7 +18,7 @@
   
     <div>
         <h1 id="page-title">{% if page.header.display_title is not empty %}{{ page.header.display_title }}{% else %}{{ page.title }}{% endif %}</h1>
-        {% if page.header.description is not empty %}<p id="page-description">{{ page.header.description }}</p>{% endif %}
+        {% if page.header.description is not empty %}<p id="page-description">{{ page.header.description|markdown }}</p>{% endif %}
 
         {% for section in page.header.sections %}
             <div class="{{ section.style_classes }} page-section">
@@ -30,6 +32,10 @@
 
                 {% if section.text is not empty %}
                     {% include 'partials/section_text.html.twig' with {'section': section} %}
+                {% endif %}
+                
+		{% if section.table is not empty %}
+                    {% include 'partials/section_table.html.twig' with {'section': section} %}
                 {% endif %}
 
                 {% if section.sub_sections is not empty %}
@@ -65,10 +71,30 @@
             </div>
         {% endif %}
 
+        {% if page.header.find_out_more is not empty %}
+	    {% include 'partials/find_out_more.html.twig' with {'content': page.header.find_out_more} %}
+        {% endif %}
+
         {% if page.header.funded_by is not empty %}
-            <div id="funded-by">{{ page.header.funded_by }}</div>
+	    {% include 'partials/funded_by.html.twig' with {'content': page.header.funded_by} %}
         {% endif %}
 
         {{ page.content }}
+
+	{% if attachment_pdf %}
+	    <div class="attachment">
+		<a target="_blank" href="{{ attachment_pdf.url }}">File Download</a>
+	    </div>
+	{% elseif attachment_docx %}
+	    <div class="attachment">
+		<a target="_blank" href="{{ attachment_docx.url }}">File Download</a>
+	    </div>
+        {% endif %}
+	<br />	
+	<br />	
+	<br />	
+	<br />	
+	<br />	
+	<br />	
     </div>
 {% endblock %}

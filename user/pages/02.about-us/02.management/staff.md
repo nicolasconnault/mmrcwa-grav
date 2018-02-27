@@ -25,14 +25,14 @@ content:
         -
             full_name: 'Henrietta Fernandes'
             title: 'Vice Chair'
-            photo: iqbal_samnakay.jpg
+            photo: default-avatar.png
             term_of_office: '2014 - 2017'
             heading_notes: null
             blurb: null
         -
             full_name: 'Cassandre Hubert'
             title: Secretary
-            photo: iqbal_samnakay.jpg
+            photo: default-avatar.png
             term_of_office: '2014 - 2017'
             heading_notes: null
             blurb: null
@@ -48,7 +48,7 @@ content:
         -
             full_name: 'Ahmad Fadlalla'
             title: Member
-            photo: iqbal_samnakay.jpg
+            photo: default-avatar.png
             term_of_office: '2015 - 2018'
             heading_notes: null
             blurb: null

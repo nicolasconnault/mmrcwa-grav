@@ -6,7 +6,8 @@ footer {
 	left: 0;
 	@extend .padding-horiz;
 	color: $footer-text;
-    padding: 50px;
+	padding: 50px;
+	text-align: center;
 
 	a:hover {
 		color: #fff;

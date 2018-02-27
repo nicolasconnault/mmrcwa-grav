@@ -1,0 +1,15 @@
+<div class="page-section" id="find-out-more">
+	<h2>Find out more</h2>
+	{% if content.contact is not empty %}
+		<p class="contact">{{ content.contact }}</p>
+	{% endif %}
+	{% if content.phone is not empty %}
+		<p class="phone" type="tel"><span>T:</span> {{ content.phone }}</p>
+	{% endif %}
+	{% if content.email is not empty %}
+		<p class="email" type="email"><span>E:</span> {{ content.email }}</p>
+	{% endif %}
+	{% if content.address is not empty %}
+		<p class="address"><span>A:</span> {{ content.address }}</p>
+	{% endif %}
+</div>

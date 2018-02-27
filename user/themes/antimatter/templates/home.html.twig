@@ -4,10 +4,38 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-12">
-                <h1>WELCOME</h1>
+		<div id="cycle-welcome">
+		    <div id="slideshow">
+			<img class="active" id="w1" src="{{ url("theme://images/TIGRINYA.png") }}" />
+			<img id="w2" src="{{ url("theme://images/SWAHILI.png") }}" />
+			<img id="w3" src="{{ url("theme://images/SOMALI-1.png") }}" />
+			<img id="w4" src="{{ url("theme://images/PASHTO.png") }}" />
+			<img id="w5" src="{{ url("theme://images/KURDISH.png") }}" />
+			<img id="w6" src="{{ url("theme://images/KIRUNDI.png") }}" />
+			<img id="w7" src="{{ url("theme://images/IRAQI-ARABIC.png") }}" />
+			<img id="w8" src="{{ url("theme://images/ENGLISH.png") }}" />
+			<img id="w9" src="{{ url("theme://images/BURMESE-1.png") }}" />
+			<img id="w10" src="{{ url("theme://images/ARABIC-2.png") }}" />
+			<img id="w11" src="{{ url("theme://images/PERSIAN-1.png") }}" />
+			<img id="w12" src="{{ url("theme://images/KAREN.png") }}" />
+			<img id="w13" src="{{ url("theme://images/FRENCH.png") }}" />
+			<img id="w14" src="{{ url("theme://images/AMHARIC.png") }}" />
+		    </div>
+		    <div class="box"></div>
+		</div>
               </div>
             </div>
           </div>
         </section>
+<script>
+	$('#slideshow img').shiner({ 
+		// The class to apply to set the transition properties
+		transClass: "trans-spec",
+		// The delay between the changes in slides
+		delay: 1000, 					
+		visibleZIndex: 1,
+		invisibleZIndex: 0
+	});
+</script>
 	{% endblock %}
 {% endembed %}

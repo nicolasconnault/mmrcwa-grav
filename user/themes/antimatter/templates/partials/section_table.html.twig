@@ -1,0 +1,19 @@
+<table>
+{% for row in section.table %} 
+<tr>
+	<th>{{ row.heading }}</th>
+	<td>
+	{% if row.text is iterable %}
+	    {% for paragraph in row.text %} 
+		<p class="row-text">{{ paragraph }}</p>
+	    {% endfor %}
+	{% else %}
+	    <p class="row-text">{{ row.text }}</p>
+	{% endif %}
+               
+	{% if row.list is not empty %}
+	    {% include 'partials/list.html.twig' with {'list': row.list} %}
+	{% endif %}
+</tr>
+{% endfor %}
+</table>

@@ -2,12 +2,8 @@
     {{ paragraph|var_dump }}
 {% else %}
     {% if paragraph == '~list~' %}
-        <ul style="list-style-image: url({{ url('theme://images/bullet-point.png') }})">
-            {% for item in section.list %}
-                <li>{{ item }}</li>
-            {% endfor %}
-        </ul>
+    	{% include 'partials/list.html.twig' with {'list': section.list} %}
     {% else %}
-        {{ paragraph }}
+        {{ paragraph|markdown }}
     {% endif %}
 {% endif %}
