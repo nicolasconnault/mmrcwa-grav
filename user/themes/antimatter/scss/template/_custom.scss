@@ -129,10 +129,9 @@ body.section-separators .page-section {
     padding-top: 40px;
     padding-bottom: 40px;
 
-
     &:first-of-type {
         border-bottom: none;
-        padding-top: 0;
+        padding-top: 50px;
     }
 
     &.narrow {
@@ -178,7 +177,7 @@ body.section-separators .page-section {
 		    max-width: 600px;
 		    position: relative;
 		    display: block;
-		    margin: 0 auto;
+		    margin: 30px auto;
             }
             padding: 30px;
         }
@@ -203,13 +202,13 @@ body.section-separators .page-section {
 	    max-width: 600px;
 	    position: relative;
 	    display: block;
-	    margin: 0 auto;
+	    margin: 30px auto;
 	}
 
     &#find-out-more {
 	    p {
 		    line-height: 20px;
-		    margin: 0;
+		    margin: 20px auto;
 		    padding: 5px;
 	    }
 	    .contact {

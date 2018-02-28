@@ -898,7 +898,7 @@ body.section-separators .page-section {
   padding-right: 9%; }
   .page-section:first-of-type {
     border-bottom: none;
-    padding-top: 0; }
+    padding-top: 50px; }
   .page-section.narrow {
     max-width: 728px;
     margin: 0 auto; }
@@ -929,7 +929,7 @@ body.section-separators .page-section {
         max-width: 600px;
         position: relative;
         display: block;
-        margin: 0 auto; }
+        margin: 30px auto; }
   .page-section table th {
     width: 140px;
     text-align: left;
@@ -946,10 +946,10 @@ body.section-separators .page-section {
     max-width: 600px;
     position: relative;
     display: block;
-    margin: 0 auto; }
+    margin: 30px auto; }
   .page-section#find-out-more p {
     line-height: 20px;
-    margin: 0;
+    margin: 20px auto;
     padding: 5px; }
   .page-section#find-out-more .contact {
     font-weight: 900;
