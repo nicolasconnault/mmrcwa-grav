@@ -18,6 +18,10 @@
         <h1 id="page-title">{% if page.header.display_title is not empty %}{{ page.header.display_title }}{% else %}{{ page.title }}{% endif %}</h1>
         {% if page.header.description is not empty %}<p id="page-description">{{ page.header.description }}</p>{% endif %}
         
+	{% for section in page.header.sections %}
+	    {% include 'partials/section.html.twig' with {'section': section} %}
+        {% endfor %}
+        
         {{ content }}
 
         {% include "forms/form.html.twig" %}

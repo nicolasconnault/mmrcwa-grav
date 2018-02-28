@@ -9,3 +9,6 @@ access:
   site:
     login: true
 hashed_password: $2y$10$2e9mSO.1A358S3fKeMgh3O9LtYm..jZSaqVoE0uWLr1pYSMuRohOG
+language: en
+login_attempts: {  }
+twofa_secret: REGJPK3S23GRWEJ3ZQGPYSNE5YV7PZ5Q

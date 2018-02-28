@@ -4,7 +4,6 @@ folders:
   - pages
 repository: 'https://github.com/nicolasconnault/mmrcwa-grav.git'
 user: nicolasconnault
-password: gitsync-def502005b82f3b8c52d02a023f3d3604d50f717d3ba8d531af08cd7fd67ad5d989c86a874b6d476c2eb2460908a5abbdf36ab895cc7fc61a0c68328d6d9d05968abdf30337dfa3e13a71a5cbbc39c77f9fbd8aceb174dbaa7b82de0a73576
 webhook: /_git-sync
 branch: master
 remote:
@@ -15,4 +14,5 @@ git:
   name: GitSync
   email: git-sync@trilby.media
   bin: git
-logging: false
+logging: true
+password: gitsync-def502005b82f3b8c52d02a023f3d3604d50f717d3ba8d531af08cd7fd67ad5d989c86a874b6d476c2eb2460908a5abbdf36ab895cc7fc61a0c68328d6d9d05968abdf30337dfa3e13a71a5cbbc39c77f9fbd8aceb174dbaa7b82de0a73576
