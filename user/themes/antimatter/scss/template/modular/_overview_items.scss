@@ -2,11 +2,12 @@
     max-width: 1200px;
     margin: 0 auto;
     .overview-item {
-        text-align: center;
+        text-align: left;
         padding: 20px;
         h2 {
           font-family: 'Nunito Sans', sans-serif;
-          text-align: center;
+	  margin: 0;
+          text-align: left;
           color: #009cbd;
           font-weight: 900;
           text-transform: uppercase;
@@ -15,6 +16,12 @@
         img {
             max-width: 100%;
         }
+	p.description {
+		margin: 5px 0px;
+	}
+	a.read-more {
+		font-weight: 900;
+	}
 
     }
     @media(min-width: 768px) {

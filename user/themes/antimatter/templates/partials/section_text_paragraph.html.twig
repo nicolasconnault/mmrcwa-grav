@@ -3,6 +3,8 @@
 {% else %}
     {% if paragraph == '~list~' %}
     	{% include 'partials/list.html.twig' with {'list': section.list} %}
+    {% elseif paragraph == '~video~' %}
+    	{% include 'partials/video.html.twig' with {'video_type': section.video_type, 'video_id': section.video_id} %}
     {% else %}
         {{ paragraph|markdown }}
     {% endif %}

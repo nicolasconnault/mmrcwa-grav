@@ -4,11 +4,13 @@
     {% for overview_item in page.header.overview_items %}
         <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 overview-item text-center">
             <a href="{{ overview_item.url }}">
-                <h2>{{ overview_item.title }}</h2>
                 {% if overview_item.image %}
-                    <img src="{{ url("theme://images/#{overview_item.image}") }}" />
+                    <img src="{{ url("user://pages/widgets/_overview-grid/#{overview_item.image}") }}" />
                 {% endif %}
             </a>
+	<h2>{{ overview_item.title }}</h2>
+	<p class="description">{{ overview_item.text }}</p>
+    	<a class="read-more" href="{{ overview_item.url }}">READ MORE</a>
         </div>
     {% endfor %}
     </div>

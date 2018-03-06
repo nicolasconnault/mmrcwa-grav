@@ -1,4 +1,4 @@
-enabled: true
+enabled: false
 text_var: 'Custom Text added by the **Git Sync** plugin (disable plugin to remove)'
 folders:
   - pages
@@ -15,4 +15,4 @@ git:
   email: git-sync@trilby.media
   bin: git
 logging: true
-password: gitsync-def502005b82f3b8c52d02a023f3d3604d50f717d3ba8d531af08cd7fd67ad5d989c86a874b6d476c2eb2460908a5abbdf36ab895cc7fc61a0c68328d6d9d05968abdf30337dfa3e13a71a5cbbc39c77f9fbd8aceb174dbaa7b82de0a73576
+password: gitsync-def502007a489d01cf1206b2979391803b486e8009b6f43a1e660ae86c5ce201772ea8bc4ae73957dba550b451240056d906280adb81c93ca7c2c953f9293fa11ff517ea9343b83956e4efa71117359c7aafe7d5a3c2eedb72aca7e3d7ab96ce631126947c837cea42fb493dea032f6edb9bd768ad6603ab250a0270

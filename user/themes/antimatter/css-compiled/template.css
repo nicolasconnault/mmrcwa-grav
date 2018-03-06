@@ -893,9 +893,7 @@ body.section-separators .page-section {
 
 .page-section {
   padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 9%;
-  padding-right: 9%; }
+  padding-bottom: 40px; }
   .page-section:first-of-type {
     border-bottom: none;
     padding-top: 50px; }
@@ -1150,17 +1148,22 @@ form#contact, form#subscribe {
   max-width: 1200px;
   margin: 0 auto; }
   .overview-items .overview-item {
-    text-align: center;
+    text-align: left;
     padding: 20px; }
     .overview-items .overview-item h2 {
       font-family: 'Nunito Sans', sans-serif;
-      text-align: center;
+      margin: 0;
+      text-align: left;
       color: #009cbd;
       font-weight: 900;
       text-transform: uppercase;
       font-size: 25px; }
     .overview-items .overview-item img {
       max-width: 100%; }
+    .overview-items .overview-item p.description {
+      margin: 5px 0px; }
+    .overview-items .overview-item a.read-more {
+      font-weight: 900; }
   @media (min-width: 768px) {
     .overview-items .overview-item {
       padding: 30px; } }
