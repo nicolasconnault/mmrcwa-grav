@@ -1,4 +1,4 @@
-<div class="person"> 
+<div class="person">
     <div class="photo">
         <img src="{{ page.media[person.photo].url }}" />
     </div>
@@ -9,7 +9,13 @@
     </div>
     <div class="blurb">
         {% for line in person.blurb %}
-            <p>{{ line }}</p>
+            {% if line == '~list~' %}
+                {% include 'partials/list.html.twig' with {'list': person.list} %}
+            {% elseif line == '~video~' %}
+                {% include 'partials/video.html.twig' with {'video_type': person.video_type, 'video_id': person.video_id} %}
+            {% else %}
+                {{ line|markdown }}
+            {% endif %}
         {% endfor %}
     </div>
 </div>

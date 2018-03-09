@@ -3,21 +3,29 @@
         {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
         {% if p.children.visible.count > 0 %}
             <li class="has-children {{ current_page }}">
+		{% if not p.header.linkless %}
                 <a href="{{ p.url }}">
                     {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
                     {{ p.menu }}
                     <span></span>
                 </a>
+		{% else %}
+                    {{ p.menu }}
+		{% endif %}
                 <ul>
                     {{ _self.loop(p) }}
                 </ul>
             </li>
         {% else %}
             <li class="{{ current_page }}">
-                <a href="{{ p.url }}">
-                    {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
+		{% if not p.header.linkless %}
+			<a href="{{ p.url }}">
+			    {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
+			    {{ p.menu }}
+			</a>
+		{% else %}
                     {{ p.menu }}
-                </a>
+		{% endif %}
             </li>
         {% endif %}
     {% endfor %}
@@ -30,22 +38,30 @@
         {% for page in pages.children.visible %}
             {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
             <li class="{{ current_page }}">
+		{% if not page.header.linkless %}
                 <a href="{{ page.url }}">
                     {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
                     {{ page.menu }}
                 </a>
+		{% else %}
+                    {{ page.menu }}
+		{% endif %}
             </li>
         {% endfor %}
     {% endif %}
     {% for mitem in site.menu %}
         <li>
+	    {% if not mitem.linkless %}
             <a href="{{ mitem.url }}">
                 {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}
                 {{ mitem.text }}
             </a>
+	{% endif %}
         </li>
     {% endfor %}
     {% if config.plugins.login.enabled and grav.user.username %}
         <li><i class="fa fa-lock"></i> {% include 'partials/login-status.html.twig' %}</li>
     {% endif %}
+
+    <li>{% include 'partials/tntsearch.html.twig' %}</li>
 </ul>

@@ -8,7 +8,7 @@
           font-family: 'Nunito Sans', sans-serif;
 	  margin: 0;
           text-align: left;
-          color: #009cbd;
+          color: $core-accent;
           font-weight: 900;
           text-transform: uppercase;
           font-size: 25px;
@@ -26,7 +26,7 @@
     }
     @media(min-width: 768px) {
         .overview-item {
-            padding: 30px; 
+            padding: 30px;
         }
     }
 }
