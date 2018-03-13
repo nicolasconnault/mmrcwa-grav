@@ -49,7 +49,7 @@
             <div id="attachments">
             {% if page.header.attachments %}
                 {% for attachment in page.header.attachments %}
-                    {% include 'partials/attachment.html.twig' with {'url': attachment.file_name, 'image': attachment.image, 'title': attachment.title} %}
+                    {% include 'partials/attachment.html.twig' with {'url': page.media[attachment.file_name].url, 'image': attachment.image, 'title': attachment.title} %}
                 {% endfor %}
             {% else %}
                 {% if attachment_pdf %}
