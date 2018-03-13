@@ -1,0 +1,35 @@
+Administrators:
+  groupname: Administrators
+  readableName: Administrators
+  description: 'Full access to all functionality'
+  access:
+    admin:
+      super: 'true'
+      login: 'true'
+      cache: 'true'
+      configuration: 'true'
+      configuration_system: 'true'
+      configuration_site: 'true'
+      configuration_media: 'true'
+      configuration_info: 'true'
+      settings: 'true'
+      pages: 'true'
+      maintenance: 'true'
+      statistics: 'true'
+      plugins: 'true'
+      themes: 'true'
+      users: 'true'
+    admin-addon-user-manager:
+      users: 'true'
+      groups: 'true'
+      users_expert: 'true'
+content-editor:
+  groupname: content-editor
+  readableName: 'Content Editors'
+  description: 'Can edit page contents'
+  icon: pencil
+  access:
+    admin:
+      login: 'true'
+      pages: 'true'
+    admin-addon-user-manager: {  }

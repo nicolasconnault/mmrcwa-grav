@@ -1,0 +1,5 @@
+{% if video_type == 'vimeo' %}
+	<iframe style="max-width: 70vw; max-height: 40vw;" src="https://player.vimeo.com/video/{{ video_id }}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+{% elseif video_type == 'youtube' %}
+	<iframe style="max-width: 70vw; max-height: 40vw;" id="ytplayer" webkitallowfullscreen mozallowfullscreen allowfullscreen type="text/html" width="640" height="360" src="https://www.youtube.com/embed/{{ video_id }}?autoplay=0&origin=http://mmrcwa.smbstreamline.com.au" frameborder="0"></iframe>
+{% endif %}

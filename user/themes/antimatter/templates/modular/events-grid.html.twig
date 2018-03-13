@@ -1,0 +1,20 @@
+<div class="modular-row overview {{ page.header.class}}">
+    {{ content }}
+    <div class="overview-items pure-g">
+    {% for item in page.header.items %}
+        <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 overview-item text-center">
+            <a href="{{ item.url }}">
+                {% if item.image %}
+                    <img src="{{ url("user://pages/widgets/_events-grid/#{item.image}") }}" />
+                {% endif %}
+		<h2>{{ item.title }}</h2>
+            </a>
+
+	{% if item.text %}
+		<p class="description">{{ item.text }}</p>
+		<a class="read-more" href="{{ item.url }}">READ MORE</a>
+	{% endif %}
+        </div>
+    {% endfor %}
+    </div>
+</div>

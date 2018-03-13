@@ -1,0 +1,10 @@
+<div class="attachment">
+    <a target="_blank" href="{{ page.media[url].url }}">
+        {% if image %}
+            {{ page.media[image].resize(200, 283) }}<br />
+        {% else %}
+            <img style="max-width:120px" class="no-shadow" src="{{ url("theme://images/file_download.png") }}" /><br />
+        {% endif %}
+        <span class="attachment-title">{{ title }}</span>
+    </a>
+</div>

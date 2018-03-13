@@ -1,0 +1,21 @@
+enabled: true
+search_route: /search
+query_route: /s
+built_in_css: true
+built_in_js: true
+built_in_search_page: true
+search_type: auto
+fuzzy: true
+stemmer: default
+display_route: false
+display_hits: false
+display_time: false
+live_uri_update: true
+limit: '20'
+min: '3'
+snippet: '300'
+index_page_by_default: true
+filter:
+  items:
+    - '@root.descendants'
+powered_by: true
