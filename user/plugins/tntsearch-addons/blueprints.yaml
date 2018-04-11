@@ -1,0 +1,17 @@
+name: TNTSearch add-ons
+version: 1.0.0
+description: "**TNTSearch add-ons** add some functions and stuff to TNT search"
+icon: trello
+author:
+  name: Nicolas Connault
+  email: nicolasconnault@gmail.com
+  url: http://nicolasconnault.wordpress.com
+homepage: https://github.com/trilbymedia/grav-plugin-tntsearch
+keywords: grav, plugin, search, search-engine
+bugs: https://github.com/trilbymedia/grav-plugin-tntsearch/issues
+docs: https://github.com/trilbymedia/grav-plugin-tntsearch/blob/develop/README.md
+license: MIT
+
+dependencies:
+    - { name: grav, version: '>=1.3.2' }
+    - { name: admin, version: '>=1.5.2' }

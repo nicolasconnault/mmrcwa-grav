@@ -1,0 +1,20 @@
+state: enabled
+email: admin@mmrcwa.org.au
+fullname: Editor
+title: Editor
+language: en
+twofa_enabled: false
+twofa_secret: REGJPK3S23GRWEJ3ZQGPYSNE5YV7PZ5Q
+groups:
+  - content-editor
+access:
+  admin: {  }
+  admin-addon-user-manager: {  }
+hashed_password: $2y$10$4f1YAIrCNMHLLcFRM2MFIO3rVhDt0dbeQ16yL9ODe2b.e.qWqvahS
+login_attempts: {  }
+avatar:
+  user/accounts/avatars/tJXvdZPpw5xIz30.jpg:
+    name: tJXvdZPpw5xIz30.jpg
+    type: image/jpeg
+    size: 162585
+    path: user/accounts/avatars/tJXvdZPpw5xIz30.jpg
