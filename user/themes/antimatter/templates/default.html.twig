@@ -1,8 +1,8 @@
 {% extends 'partials/base.html.twig' %}
 {% block content %}
     {% set hero_image = page.media['hero.jpg'] %}
-    {% set attachment_pdf = page.media['attachment.pdf'] %}
-
+    {% set attachment_pdf = page.media['attachment.pdf'] %} 
+    {% set attachments_style = page.header.attachments_style %}
     {% set attachment_docx = page.media['attachment.docx'] %}
     {% set attachment_title = 'Download File' %}
     {% if page.header.attachment_title %}
@@ -49,9 +49,7 @@
         {% if attachment_pdf or page.header.attachments %}
             <div id="attachments">
             {% if page.header.attachments %}
-                {% for attachment in page.header.attachments %}
-                    {% include 'partials/attachment.html.twig' with {'url': page.media[attachment.file_name].url, 'image': attachment.image, 'title': attachment.title} %}
-                {% endfor %}
+                {% include 'partials/section_attachments.html.twig' with {'attachments': page.header.attachments, 'attachments_style': attachments_style} %}
             {% else %}
                 {% if attachment_pdf %}
                     {% include 'partials/attachment.html.twig' with {'url': attachment_pdf.url, 'image': page.header.attachment_image, 'title': attachment_title} %}

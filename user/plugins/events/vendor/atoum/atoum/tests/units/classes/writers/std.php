@@ -79,7 +79,7 @@ class std extends atoum\test
 			->and($this->calling($std)->init = $std)
 			->then
 				->object($std->clear())->isidenticalto($std)
-				->adapter($adapter)->call('fwrite')->witharguments(null, "[1K")->once()
+				->adapter($adapter)->call('fwrite')->witharguments(null, "[1K")->once()
 			->if($this->calling($cli)->isTerminal = false)
 			->then
 				->object($std->clear())->isidenticalto($std)

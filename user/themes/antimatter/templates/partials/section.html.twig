@@ -16,6 +16,10 @@
             {% include 'partials/section_table.html.twig' with {'section': section} %}
         {% endif %}
 
+        {% if section.attachments %}
+            {% include 'partials/section_attachments.html.twig' with {'attachments': section.attachments, 'attachments_style': section.attachments_style} %}
+        {% endif %}
+
         {% if section.sub_sections is not empty %}
             <div class="sub-sections-wrapper {% if section.columns > 1 %}pure-g{% endif %}">
             {% for sub_section in section.sub_sections %}
@@ -32,6 +36,10 @@
 
                 {% if sub_section.url is not empty %}
                     </a>
+                {% endif %}
+
+                {% if sub_section.attachments %}
+                    {% include 'partials/section_attachments.html.twig' with {'attachments': sub_section.attachments, 'attachments_style': sub_section.attachments_style} %}
                 {% endif %}
                 </div>
             {% endfor %}

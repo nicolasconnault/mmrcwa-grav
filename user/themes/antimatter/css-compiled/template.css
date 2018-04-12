@@ -1029,7 +1029,9 @@ form#contact, form#subscribe {
     box-shadow: none; }
   .attachment .attachment-title {
     margin-top: 20px; }
-
+ul#attachments-list {
+    list-style-type: none;
+} 
 #mc_embed_signup {
   max-width: 768px;
   margin: 0 auto; }
